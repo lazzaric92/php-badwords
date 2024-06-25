@@ -13,6 +13,14 @@
     <main>
         <h1>Il Signore degli Anelli</h1>
         <p> <?php echo $incipit ?> </p>
+        <p>Word count: <?php echo strlen($incipit) ?> </p>
+        
+        <br>
+        <form action="index.php" method="GET">
+            <label for="badword">Choose a word:</label>
+            <input type="text" name="badword" id="badword">
+            <button type="submit">Ban that word!</button>
+        </form>
     </main>
 </body>
 </html>
